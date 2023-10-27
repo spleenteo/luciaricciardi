@@ -1,0 +1,21 @@
+.teaser
+  display: block
+  background-color: transparent
+  border-bottom: 1px dotted $primary-color
+  +vertical-padding(4)
+  color: $primary-color
+  text-decoration: none
+  text-align: center
+  &:hover
+    background-color: $primary-color
+    transition: all .5s ease-in-out
+    color: #fff !important
+
+
+.teaser__title
+  +font-size(beta)
+  font-family: $heading-font-family
+  font-weight: bold
+
+.teaser__subtitle
+  font-style: italic

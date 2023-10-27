@@ -1,0 +1,26 @@
+- content_for :head do
+  = dato_meta_tags(treatment)
+
+
+.wrap
+  .main-content
+    .main-content__title
+      h1 Trattamenti / #{treatment.name}
+
+    .main-content__body
+      img src=treatment.image.file.width(960).height(300).blend("4e274b").sat(-90).format("jpg").to_url
+      .formatted-content
+        = treatment.description
+      .space--both-2.align--center
+        a.button href="mailto:luciadigaudesi@gmail.com" Richiedi questo trattamento
+
+
+.row
+  .wrap
+
+    h3.main-content__title Patologie trattate con questa tecnica
+
+    .grid--bottom
+      - dato.pathologies.values.select { |p| p.treatments.include? treatment }.each do |pathology|
+        .grid__item.lap-6-12.desk-4-12
+          = partial 'box', :locals=>{ obj: pathology, path: "patologia"}

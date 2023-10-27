@@ -1,0 +1,41 @@
+- content_for :head do
+  = dato_meta_tags(dato.partnerships_page)
+
+
+.wrap
+  .main-content
+    .main-content__title
+      h1 = dato.partnerships_page.title
+
+    .main-content__body
+      .formatted-content
+        p = dato.partnerships_page.content
+
+.row
+  .wrap
+    .grid--center
+      .grid__item.lap-6-12.col
+        h3.col__title
+          span Con professionisti
+
+        - dato.pro_partnerships.values.sort_by(&:position).each do |partnership|
+          .professionals
+            .professionals__title = partnership.name
+            .professionals__body = partnership.description
+            - if partnership.url.present?
+              .professionals__url
+                a.button--small target="_blank" href=partnership.url sito web
+
+      .grid__item.lap-6-12.col
+        h3.col__title
+          span Con enti, società e associazioni
+
+        - dato.entity_partnerships.values.sort_by(&:position).each do |entity_partnership|
+          .professionals
+            .professionals__title = entity_partnership.name
+            img.professionals__image src=entity_partnership.logo.file.width(100).height(100).format("jpg").fit("crop").to_url
+            .professionals__body = entity_partnership.description
+            - if entity_partnership.url.present?
+              .professionals__url
+                a.button--small target="_blank" href=entity_partnership.url sito web
+

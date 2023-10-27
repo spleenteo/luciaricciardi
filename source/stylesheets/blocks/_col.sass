@@ -1,0 +1,22 @@
+.col
+  text-align: left
+  border-left: 1px dotted $purple-color
+
+.col__title
+  text-align: left
+  +margin-bottom(4)
+  padding-top: 4px
+  span
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    -o-box-sizing: border-box
+    -ms-box-sizing: border-box
+    background-color: $purple-color
+    color: $white-color
+    +padding(0.5)
+    margin-left: -24px
+
+.col__title--int
+  @extend .col__title
+  span
+    margin-left: 0

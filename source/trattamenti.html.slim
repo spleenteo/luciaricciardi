@@ -1,0 +1,19 @@
+- content_for :head do
+  = dato_meta_tags(dato.treatments_page)
+
+.wrap
+  .main-content
+    .main-content__title
+      h1 = dato.treatments_page.title
+
+    .main-content__body
+      .formatted-content
+        = dato.treatments_page.content
+
+.row
+  .wrap
+    .grid--bottom.space--top-5
+      - dato.treatments.values.sort_by(&:position).each do |treatment|
+        .grid__item.lap-6-12.desk-4-12
+          = partial 'box', :locals=>{ obj: treatment, path: "trattamento"}
+

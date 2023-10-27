@@ -1,0 +1,60 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+<metadata>
+Created by FontForge 20150302 at Mon Jul 13 11:07:44 2015
+ By User
+</metadata>
+<defs>
+<font id="icons" horiz-adv-x="512" >
+  <font-face 
+    font-family="icons"
+    font-weight="400"
+    font-stretch="normal"
+    units-per-em="512"
+    panose-1="2 0 5 9 0 0 0 0 0 0"
+    ascent="448"
+    descent="-64"
+    bbox="0 -21 512 405"
+    underline-thickness="25"
+    underline-position="-52"
+    unicode-range="U+F101-F10D"
+  />
+<missing-glyph 
+d="M17 0v341h136v-341h-136zM34 17h102v307h-102v-307z" />
+    <glyph glyph-name=".notdef" 
+d="M17 0v341h136v-341h-136zM34 17h102v307h-102v-307z" />
+    <glyph glyph-name=".null" horiz-adv-x="0" 
+ />
+    <glyph glyph-name="nonmarkingreturn" 
+ />
+    <glyph glyph-name="uniF101" unicode="&#xf101;" 
+d="M158 273l98 -98l98 98l30 -30l-128 -128l-128 128z" />
+    <glyph glyph-name="uniF102" unicode="&#xf102;" 
+d="M329 100l-30 -31l-128 128l128 128l30 -30l-98 -98z" />
+    <glyph glyph-name="uniF103" unicode="&#xf103;" 
+d="M183 97l98 98l-98 97l30 31l128 -128l-128 -128z" />
+    <glyph glyph-name="uniF104" unicode="&#xf104;" 
+d="M158 119l-30 30l128 128l128 -128l-30 -30l-98 98z" />
+    <glyph glyph-name="uniF105" unicode="&#xf105;" 
+d="M192 103l226 226l30 -30l-256 -256l-119 119l30 30z" />
+    <glyph glyph-name="uniF106" unicode="&#xf106;" 
+d="M405 341h-298v-298h298v298zM405 384q18 0 30.5 -12.5t12.5 -30.5v-298q0 -18 -12.5 -30.5t-30.5 -12.5h-298q-18 0 -30.5 12.5t-12.5 30.5v298q0 18 12.5 30.5t30.5 12.5h298z" />
+    <glyph glyph-name="uniF107" unicode="&#xf107;" 
+d="M405 384q18 0 30.5 -12.5t12.5 -30.5v-298q0 -12 -5.5 -22t-15.5 -15.5t-22 -5.5h-298q-18 0 -30.5 12.5t-12.5 30.5v298q0 18 12.5 30.5t30.5 12.5h298zM213 85l192 192l-30 31l-162 -162l-76 76l-30 -30z" />
+    <glyph glyph-name="uniF108" unicode="&#xf108;" 
+d="M405 311l-119 -119l119 -119l-30 -30l-119 119l-119 -119l-30 30l119 119l-119 119l30 30l119 -119l119 119z" />
+    <glyph glyph-name="uniF109" unicode="&#xf109;" 
+d="M43 117h426v-42h-426v42zM43 224h426v-43h-426v43zM43 331h426v-43h-426v43z" />
+    <glyph glyph-name="uniF10A" unicode="&#xf10a;" 
+d="M427 363q17 0 29.5 -12.5t12.5 -30.5v-256q0 -18 -12.5 -30.5t-29.5 -12.5h-342q-11 0 -21 6t-15.5 15.5t-5.5 21.5v256q0 18 12.5 30.5t29.5 12.5h342zM427 277v43l-171 -107l-171 107v-43l171 -106z" />
+    <glyph glyph-name="uniF10B" unicode="&#xf10b;" 
+d="M112 224q47 0 79.5 -33t32.5 -79t-32.5 -79t-79 -33t-79.5 33t-33 79v16q0 93 65.5 158.5t158.5 65.5v-64q-66 0 -113 -47q-9 -9 -16 -18q9 1 17 1zM400 224q47 0 79.5 -33t32.5 -79t-32.5 -79t-79 -33t-79.5 33t-33 79v16q0 93 65.5 158.5t158.5 65.5v-64
+q-66 0 -113 -47q-9 -9 -16 -18q9 1 17 1z" />
+    <glyph glyph-name="uniF10C" unicode="&#xf10c;" 
+d="M256 405q88 0 150.5 -62.5t62.5 -150.5t-62.5 -150.5t-150.5 -62.5t-150.5 62.5t-62.5 150.5t62.5 150.5t150.5 62.5zM256 21q71 0 121 50t50 121t-50 121t-121 50t-121 -50t-50 -121t50 -121t121 -50z" />
+    <glyph glyph-name="uniF10D" unicode="&#xf10d;" 
+d="M256 299q44 0 75.5 -31.5t31.5 -75.5t-31.5 -75.5t-75.5 -31.5t-75.5 31.5t-31.5 75.5t31.5 75.5t75.5 31.5zM256 405q88 0 150.5 -62.5t62.5 -150.5t-62.5 -150.5t-150.5 -62.5t-150.5 62.5t-62.5 150.5t62.5 150.5t150.5 62.5zM256 21q71 0 121 50t50 121t-50 121
+t-121 50t-121 -50t-50 -121t50 -121t121 -50z" />
+  </font>
+</defs></svg>

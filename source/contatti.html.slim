@@ -1,0 +1,39 @@
+- content_for :head do
+  = dato_meta_tags(dato.contacts_page)
+
+
+.wrap
+  .main-content
+    .main-content__title
+      h1 = dato.contacts_page.title
+    .main-content__body
+      .formatted-content
+        = dato.contacts_page.content
+      .space--both-2.align--center
+        a.button href="mailto:luciadigaudesi@gmail.com" Richiedi un appuntamento
+
+
+.row
+  .wrap
+
+    .grid--center
+      - dato.offices.values.sort_by(&:position).each do |office|
+        .grid__item.lap-6-12
+          .studio
+            h3.studio__title
+              span = office.name
+
+            .studio__map.space--both-2
+              iframe frameborder="0" height="200" marginheight="0" marginwidth="0" scrolling="no" src=google_maps_iframe_url(office.address) width="100%"
+              .milli
+                a target="_blank" href=google_maps_url(office.address) Visualizza su Google map
+
+            .studio__details
+              .studio__address Studio:   #{office.address}
+              .studio__phone Tel/Cel: #{office.phone_number}
+              .studio__opening-time
+                .studio__opening-time__title Orari
+                ul.studio__opening-time__content
+                  li = office.working_hours
+
+

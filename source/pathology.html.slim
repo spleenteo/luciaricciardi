@@ -1,0 +1,26 @@
+- content_for :head do
+  = dato_meta_tags(pathology)
+
+.wrap
+  .main-content
+    .main-content__title
+      h1 Patologie / #{pathology.name}
+
+    .main-content__body
+      img src=pathology.image.file.width(960).height(300).blend("4e274b").sat(-90).format("jpg").to_url
+      .formatted-content
+        = pathology.description
+      .space--both-2.align--center
+        a.button href="mailto:luciadigaudesi@gmail.com" Hai sintomi simili? Richiedi un consulto
+
+
+.row
+  .wrap
+
+    h3.main-content__title Come curare queste patologie?
+
+    .grid--bottom
+      - pathology.treatments.each do |treatment|
+        .grid__item.lap-6-12.desk-4-12
+          = partial 'box', :locals=>{ obj: treatment, path: "trattamento"}
+

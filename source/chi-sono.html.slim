@@ -1,0 +1,100 @@
+- content_for :head do
+  = dato_meta_tags(dato.about)
+
+
+.wrap
+  .main-content
+    .main-content__title
+      h1 Dr. Lucia Ricciardi di Gaudesi
+
+    .main-content__body
+      .flag
+        .flag__image
+          = image_tag dato.about.photo.file.to_url, title: "Dottoressa Lucia Ricciardi di Gaudesi Fisioterapista"
+        .flag__body
+          .formatted-content
+            p = dato.about.content
+
+      .space--both-2.align--center
+        .nav
+          .nav__item
+            a.button  href="/trattamenti/"
+              | I trattamenti
+              i.icon--arrow-right.icon--large
+
+          .nav__item
+            a.button target="_blank" href=dato.about.cv.file.to_url
+              | Curriculum professionale
+              i.icon--arrow-right.icon--large
+
+
+.row
+  .wrap
+    h2.beta Figure professionali: un po' di ordine
+    .space--both-2.formatted-content
+      markdown:
+        La fisioterapia è praticata dal<b> Dottore in fisioterapia</b> (Fisioterapista),<b> professionista laureato</b> appartenente alla classe delle professioni sanitarie della riabilitazione, tuttavia, non esiste ad oggi, un albo professionale per fisioterapisti. Questa risulta essere una mancanza nei confronti del paziente, che non viene così tutelato da figure che lavorano in ambito medico e riabilitativo, pur non essendo in possesso di titoli riconosciuti.
+
+        **Cerchiamo di capire quali sono le differenti figure professionali e a chi affidarsi:**
+
+
+    .grid--wide
+      .grid__item.lap-6-12
+        .dr-who
+          h3.dr-who__title Fisioterapista (Profilo Professionale)
+          .dr-who__body.formatted-content
+            markdown:
+              E' individuata la figura del fisioterapista con il seguente profilo: il fisioterapista è l'operatore sanitario, in possesso del diploma universitario abilitante, che svolge in via autonoma, o in collaborazione con altre figure sanitarie, gli interventi di prevenzione, cura e riabilitazione nelle aree della motricità, delle funzioni corticali superiori, e di quelle viscerali conseguenti a eventi patologici, a varia eziologia, congenita o acquisita.
+
+              In riferimento alla diagnosi ed alle prescrizioni del medico, nell'ambito delle proprie competenze, il fisioterapista:
+
+              1. elabora, anche in équipe multidisciplinare, la definizione del programma di riabilitazione volto all'individuazione ed al superamento del bisogno di salute del disabile;
+              1. pratica autonomamente attività terapeutica per la rieducazione funzionale delle disabilità motorie, psicomotorie e cognitive utilizzando terapie fisiche, manuali, massoterapiche e occupazionali;
+              1. propone l'adozione di protesi ed ausili, ne addestra all'uso e ne verifica l'efficacia;
+              1. verifica le rispondenze della metodologia riabilitativa attuata agli obiettivi di recupero funzionale.
+
+
+      .grid__item.lap-6-12
+        .dr-who
+          h3.dr-who__title Fisiatra (Profilo Professionale)
+          .dr-who__body.formatted-content
+            markdown:
+              Il fisiatra &egrave; il medico della disabilità - congenite o acquisite - ovvero una condizione in cui si perde autosufficienza.
+
+              Il campo di azione del medico fisiatra è molteplice:
+
+              * malattie neurologiche disabilitanti come l’ictus cerebri, la sclerosi multipla, la paraplegia;
+              * le malattie reumatiche maggiori come l’artrite reumatoide e la spondilite anchilosante;
+              * le condizioni muscolo scheletriche più comuni come l’artrosi, i dolori cervicali e lombari, le sciatalgie e le cervicobrachialgie, le periartriti di spalla e di anca ecc...;
+              * le patologie traumatiche come le fratture del collo del femore ed in genere tutti i traumatismi del rachide e degli arti.
+
+              Per contrastare e prevenire la disabilità, il fisiatra si avvale di farmaci specifici, di terapie fisiche manuali e strumentali (elettroterapia, termoterapia, ecc..) e dell’esercizio terapeutico, lavorando in stretta collaborazione con il fisioterapista, il logopedista e l’educatore motorio.
+
+
+
+      .grid__item.lap-6-12
+        .dr-who
+          h3.dr-who__title Osteopata
+          .dr-who__body.formatted-content
+            markdown:
+              In Italia, in conformità alle leggi vigenti, il Diploma di Osteopata, non costituisce titolo abilitante all'esercizio di alcuna professione sanitaria né è sostitutivo di alcun altro titolo di studio riconosciuto valido per l'esercizio di dette professioni.
+
+              La mancanza in Italia di uno status giuridico per l’osteopatia ha, per necessità oggettiva, richiesto la costituzione di forme associative professionali che si adoperano nell’ottenere non solo un riconoscimento legale dell’osteopatia, ma anche una regolamentazione e una tutela della professione osteopatica.
+
+              La mancanza di norme che ne regolino l’esercizio comporta che la stessa figura professionale dell’osteopata non sia tutelata dalla legge, e quindi che sia consentito a chiunque praticarla, a danno degli osteopati ma soprattutto dei pazienti.
+
+              Pertanto, l'accesso ai trattamenti osteopatici avviene su prescrizione del medico specialista.
+
+      .grid__item.lap-6-12
+        .dr-who
+          h3.dr-who__title Chiropratico
+          .dr-who__body.formatted-content
+            markdown:
+              Il termine chiropratica è riferito allo studio, alla diagnosi, alla cura e alla prevenzione dei disturbi neuromuscoloscheletrici e dei loro effetti sullo stato generale di salute degli umani e degli animali vertebrati[6]. È normata in una quarantina di giurisdizioni nazionali, alcune delle quali hanno creato dei corsi universitari[6].
+
+              In Italia non esiste alcun percorso di studio riconosciuto né sono stabiliti requisiti per svolgere l'attività di chiropratico. La legge finanziaria del 2008 ha previsto l'istituzione di un albo dei chiropratici senza però specificarne i requisiti di ingresso né l'area o la modalità di competenza.[7] L'albo non è stato successivamente creato.
+
+
+
+
+

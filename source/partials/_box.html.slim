@@ -1,0 +1,11 @@
+.box
+  h2.box__title
+    = link_to obj.name, "/#{path}/#{obj.slug}"
+
+  = link_to "/#{path}/#{obj.slug}" do
+    img.box__image src=obj.image.file.width(300).height(150).blend("4e274b").sat(-90).format("jpg").fit("crop").to_url
+
+  .box__action
+    a.button--small href="/#{path}/#{obj.slug}" dettagli
+
+

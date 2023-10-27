@@ -1,0 +1,38 @@
+.main-menu
+  font-family: $georgia
+  ul
+    +at-breakpoint(lap)
+      text-align: right
+      column-count: 1
+    column-count: 2
+    li
+      display: list-item
+      padding: 7px 0
+      +at-breakpoint(eq-lap)
+        padding: 0
+        +font-size(delta)
+      +at-breakpoint(tab)
+        padding: inherit
+        margin-left: 15px
+        position: relative
+        display: inline-block
+        &:before
+          content: " "
+          background-image: url(/images/sprites/nav-separator.png)
+          background-repeat: no-repeat
+          display: inline-block
+          // background-position: -54px 0
+          height: 34px
+          width: 15px
+          position: absolute
+          left: -15px
+          top: -7px
+        &:first-child
+          &:before
+            display: none
+    a
+      text-decoration: none
+      font-style: italic
+      &:hover
+        text-shadow: 1px 1px 1px #777
+        color: $white-color

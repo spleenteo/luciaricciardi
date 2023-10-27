@@ -1,0 +1,18 @@
+- content_for :head do
+  = dato_meta_tags(dato.pathologies_page)
+
+.wrap
+  .main-content
+    .main-content__title
+      h1 = dato.pathologies_page.title
+
+    .main-content__body
+      .formatted-content
+        = dato.pathologies_page.content
+
+.row
+  .wrap
+    .grid--bottom.space--top-5
+      - dato.pathologies.values.sort_by(&:position).each do |pathology|
+        .grid__item.lap-6-12.desk-4-12
+          = partial 'box', :locals=>{ obj: pathology, path: "patologia"}

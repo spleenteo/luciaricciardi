@@ -1,0 +1,56 @@
+- content_for :head do
+  = dato_meta_tags(dato.guestbook_page)
+
+
+.wrap
+  .main-content
+    .main-content__title
+      h1 = dato.guestbook_page.title
+
+    .main-content__body
+      .formatted-content
+        p = dato.guestbook_page.content
+
+      .space--both-2.align--center
+        a.button href="mailto:luciadigaudesi@gmail.com" Sei già un paziente? Invia un commento!
+
+
+.row
+  .wrap
+
+    .grid--wide
+      .grid__item.lap-6-12
+        - dato.guestbook_comments.values.sort_by(&:insertion_date).each do |guest|
+          article.guestbook
+            .guestbook__content = guest.content
+            .guestbook__author = guest.author
+
+      .grid__item.lap-6-12
+        .guestbook__poetry
+          p
+            |Quando la civiltà era agli albori,<br>
+            |Dominava sull'uom la malattia,e<br>
+            |Eran le membra pien di dolori<br>
+            |E per questi non c'era terapia...<br>
+          p
+            |Trovar rimedio ai duoli bisognava;<br>
+            |Con tanti sforzi l'uom cercó la via,<br>
+            |Divenne realtà ciò che sognava;<br>
+            |Scoprì così la fisioterapia...<br>
+          p
+            |A render perfetta questa scienza<br>
+            |A grandi passi ci pensò il progresso,<br>
+            |Rifulse degli uman l'intelligenza<br>
+            |E l'invenzione diventò un successo!<br>
+          p
+            |Dei fisioterapisti ormai la schiera <br>
+            |Si è fatta numerosa e imponente,<br>
+            |Ma solo LUCIA ne porta la bandiera<br>
+            |E senza lei il resto non è niente!<br>
+          p
+            |Se le tue membra son rotte o stanche<br>
+            |Non deviar dalla retta via,<br>
+            |Ella ti aggiusta le ginocchia e l'anche...<br>
+            |E tu potrai gridar: "VIVA LUCIA"!!!<br>
+          p
+            em Con stima e affetto, Claudio Cigni
